@@ -353,14 +353,14 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1;
+  background-color: rgb(39, 39, 39);
+  border-color: rgb(39, 39, 39);
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important;
+  background-color: white !important;
+  border-color: white  !important;
 }
 
 .btn-lg {
