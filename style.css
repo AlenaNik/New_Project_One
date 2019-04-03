@@ -317,6 +317,15 @@ padding-left: 1.1rem;
 padding-right: 1.1rem;
 }
 }
+
+
+/* Contact Page */
+
+.contact-me {
+  font-family: Georgia;
+}
+
+
 /* FOOTER */
 
 footer .list-inline {
