@@ -219,7 +219,6 @@ header.masthead .post-heading .meta a {
   position: relative;
  }
  .about h1{
-  color:#F97300;
   margin: 2em;
  }
  .dermotpic {
@@ -267,17 +266,18 @@ letter-spacing: 1px;
 text-transform: uppercase;
 border-radius: 0;
 font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+background-color: rgb(27, 27, 27);
 }
 
 .btn-primary {
-background-color: #0085A1;
-border-color: #0085A1;
+background-color: rgb(27, 27, 27) !important;
+border-color: rgb(27, 27, 27) !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
 color: #fff;
-background-color: #00657b !important;
-border-color: #00657b !important;
+background-color: rgb(27, 27, 27) !important;
+border-color: rgb(27, 27, 27) !important;
 }
 
 .btn-lg {
@@ -350,11 +350,12 @@ footer .copyright {
   text-transform: uppercase;
   border-radius: 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: rgb(39, 39, 39) !important
 }
 
 .btn-primary {
-  background-color: rgb(39, 39, 39);
-  border-color: rgb(39, 39, 39);
+  background-color: rgb(39, 39, 39) !important;
+  border-color: rgb(39, 39, 39) !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
