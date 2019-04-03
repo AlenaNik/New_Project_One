@@ -31,6 +31,90 @@ body {
     transition: all 0.2s;
   }
 
+  .gallery{
+    margin: 15px;
+  }
+  .mb-3{
+    position: relative;
+    overflow: hidden;
+  }
+  .img-fluid{
+    position: relative;
+    max-width: 100%;
+    transition: transform 2s;
+    }
+  
+  .mb-3:hover .img-fluid{
+    opacity: 0.8;
+    transform: scale(1.2);
+    
+  }
+  .mb-3:hover .details{
+    transform: scaleY(1);
+  }
+  .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+  }
+  
+  .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+   }
+  
+  .details .content p{
+    color: white;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #0085A1;
+    text-shadow: none;
+  }
+  
+  img::selection {
+    color: #fff;
+    background: transparent;
+  }
+  
+  img::-moz-selection {
+    color: #fff;
+    background: transparent;
+  }
+  .gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+    }
 /* This is for the contact page */
 
 input [type=text], select, textarea {
