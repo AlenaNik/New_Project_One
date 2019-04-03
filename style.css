@@ -129,7 +129,38 @@ body {
       font-size: 30px;
     }
   }
-
+/* This is for the about page */
+.about{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+   }
+   .about h1{
+    color:#F97300;
+    margin: 2em;
+   }
+   .dermotpic {
+    height: 100%;
+       width: 100%;
+       padding: 25px;
+   }
+   .about span{
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+   }
+   .about .desc{
+    padding: 2em;
+    border-left:4px solid #10828C;
+   }
+   .about .desc h3{
+    color: #10828C;
+   }
+   .about .desc p{
+    line-height:2;
+    color:#888;
+   } 
 /* This is for the contact page */
 
 input [type=text], select, textarea {
