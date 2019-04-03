@@ -39,7 +39,9 @@ body {
   display: flex;
   justify-content: flex-end;
   }
-
+ .navbar-brand{
+   font-family: 'lora';
+ }
   .nav-link{
     margin-right: 50px;
       }
@@ -145,11 +147,7 @@ body {
     }
   }
   /* This is for the home grid page */
-  blockquote {
-    font-style: italic;
-    color: #868e96;
-  }
-  
+    
   .section-heading {
     font-size: 36px;
     font-weight: 700;
