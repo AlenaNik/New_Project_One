@@ -1,4 +1,4 @@
-
+git st
 
 body {
     font-size: 20px;
@@ -31,6 +31,23 @@ body {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
+
+  /* NavBar */
+  .navbar-nav,
+  .mr-auto {
+  flex: 1;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  }
+ .navbar-brand{
+   font-family: 'lora';
+ }
+  .nav-link{
+    margin-right: 50px;
+      }
+  /* NavBar */
+
 
   header.masthead {
     margin-bottom: 50px;
@@ -129,6 +146,69 @@ body {
       font-size: 30px;
     }
   }
+  /* This is for the home grid page */
+    
+  .section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+  
+  .caption {
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .gallery{
+    margin: 15px;
+  }
+  .mb-3{
+    position: relative;
+    overflow: hidden;
+  }
+  .img-fluid{
+    position: relative;
+    max-width: 100%;
+    transition: transform 2s;
+    }
+  
+  .mb-3:hover .img-fluid{
+    opacity: 0.8;
+    transform: scale(1.2);
+    
+  }
+  .mb-3:hover .details{
+    transform: scaleY(1);
+  }
+  .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+  }
+  
+  .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+   }
+  
+  .details .content p{
+    color: white;
+  }
+/* End of Grid */
 
 
 /* This is for the about page */
