@@ -41,7 +41,7 @@ justify-content: flex-end;
  font-family: 'lora';
  font-size: 150%;
  font-weight: bold;
- margin-left: 30px;
+ margin-left: 30px; 
 }
 .nav-link{
   margin-right: 50px;
