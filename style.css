@@ -31,102 +31,89 @@ body {
     transition: all 0.2s;
   }
 
-  header.masthead {
-    margin-bottom: 50px;
-    background: no-repeat center center;
-    background-color: #868e96;
-    background-attachment: scroll;
+  .gallery{
+    margin: 15px;
+  }
+  .mb-3{
     position: relative;
-    background-size: cover;
+    overflow: hidden;
   }
+  .img-fluid{
+    position: relative;
+    max-width: 100%;
+    transition: transform 2s;
+    }
   
-  header.masthead .overlay {
+  .mb-3:hover .img-fluid{
+    opacity: 0.8;
+    transform: scale(1.2);
+    
+  }
+  .mb-3:hover .details{
+    transform: scaleY(1);
+  }
+  .details{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #212529;
-    opacity: 0.5;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
   }
   
-  header.masthead .page-heading,
-  header.masthead .post-heading,
-  header.masthead .site-heading {
-    padding: 200px 0 150px;
+  .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+   }
+  
+  .details .content p{
     color: white;
   }
   
-  @media only screen and (min-width: 768px) {
-    header.masthead .page-heading,
-    header.masthead .post-heading,
-    header.masthead .site-heading {
-      padding: 200px 0;
-    }
-  }
-  
-  header.masthead .page-heading,
-  header.masthead .site-heading {
-    text-align: center;
-  }
-  
-  header.masthead .page-heading h1,
-  header.masthead .site-heading h1 {
-    font-size: 50px;
-    margin-top: 0;
-  }
-  
-  header.masthead .page-heading .subheading,
-  header.masthead .site-heading .subheading {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.1;
-    display: block;
-    margin: 10px 0 0;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    header.masthead .page-heading h1,
-    header.masthead .site-heading h1 {
-      font-size: 80px;
-    }
-  }
-  
-  header.masthead .post-heading h1 {
-    font-size: 35px;
-  }
-  
-  header.masthead .post-heading .meta,
-  header.masthead .post-heading .subheading {
-    line-height: 1.1;
-    display: block;
-  }
-  
-  header.masthead .post-heading .subheading {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 10px 0 30px;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  
-  header.masthead .post-heading .meta {
-    font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
-    font-family: 'Lora', 'Times New Roman', serif;
-  }
-  
-  header.masthead .post-heading .meta a {
+  ::selection {
     color: #fff;
+    background: #0085A1;
+    text-shadow: none;
   }
   
-  @media only screen and (min-width: 768px) {
-    header.masthead .post-heading h1 {
-      font-size: 55px;
+  img::selection {
+    color: #fff;
+    background: transparent;
+  }
+  
+  img::-moz-selection {
+    color: #fff;
+    background: transparent;
+  }
+  .gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
     }
-    header.masthead .post-heading .subheading {
-      font-size: 30px;
     }
   }
 /* This is for the about page */
@@ -161,6 +148,7 @@ body {
     line-height:2;
     color:#888;
    } 
+
 /* This is for the contact page */
 
 input [type=text], select, textarea {
