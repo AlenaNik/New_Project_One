@@ -404,6 +404,10 @@ footer .copyright {
 
   /* This is for the gallery grid page */
 
+  .galleryTittle{
+  text-align: center;
+}
+
   .gcontainer{
     margin: 5%;
   }
@@ -412,43 +416,32 @@ footer .copyright {
     margin: 0 auto;
   }
 
-
 .carousel {
-  width: auto;
+  width: 300px;
   height: 500px;
-  overflow:hidden;
 }
 
-.carousel .item {
-    width: auto;
+.carousel .carousel-item {
     height: 500px;
-    overflow: hidden;
 }
 
-.carousel .item img{
-    width: auto;
+.carousel .carousel-item img{
     height: 500px;
-    overflow: hidden;
 }
 
 @media (min-width: 600px){
-.carousel {
-  width: 500px;
-  height: auto;
-  overflow:hidden;
-}
+  .carousel {
+    width: 400px;
+    height: 750px;
+  }
 
-.carousel .item {
-    width: 500px;
-    height: auto;
-    overflow: hidden;
-}
+  .carousel .carousel-item {
+      height: 750px;
+  }
 
-.carousel .item img{
-    width: 500px;
-    height: auto;
-    overflow: hidden;
-}
+  .carousel .carousel-item img{
+      height: 750px;
+  }
 }
 
 
