@@ -321,12 +321,9 @@ padding-right: 1.1rem;
 
 /* Contact Page */
 
-.contact-me {
-  font-family: Georgia;
-}
-
 .mb-4 {
   padding-left: 50px;
+  font-family: Georgia;
 }
 
 /* FOOTER */
