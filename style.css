@@ -403,7 +403,7 @@ footer .copyright {
 
   .gbackground{
     width: 100%;
-    height: 79%;
+    height: 62%;
     position: absolute;
     z-index: -1;
   }
@@ -436,6 +436,12 @@ footer .copyright {
 }
 /* smaller screens */
 @media (min-width: 600px){
+  .gbackground{
+    width: 100%;
+    height: 79%;
+    position: absolute;
+    z-index: -1;
+  }
   #madridCarousel{
     margin: 0 auto;
   }
